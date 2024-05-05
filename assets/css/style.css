@@ -1,0 +1,20 @@
+:root
+{
+    --blue-dark: #070732;
+    --color: #1212a3;
+    --family: Montserrat;
+    --radius: 50px;
+    --transition: all 0.5s ease-in 0s;
+}
+*
+{
+    box-sizing: border-box;
+    font-family: var(--family);
+}
+#header_startPage
+{
+    background-image: linear-gradient(to bottom, rgba(4, 1, 9, 0.872) 3%, rgba(7, 1, 17, 0.967) 60%), url("../img/picture_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

